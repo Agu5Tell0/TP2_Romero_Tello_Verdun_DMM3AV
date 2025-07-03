@@ -7,7 +7,7 @@
         let rotationSpeed = 0.01;
 
         function setup() {
-            let canvas = createCanvas(800, 600, WEBGL);
+            let canvas = createCanvas(1200, 1200, WEBGL);
             canvas.parent('canvas-container');
             noStroke();
         }

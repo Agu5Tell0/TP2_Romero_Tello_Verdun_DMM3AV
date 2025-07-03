@@ -72,7 +72,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: left;
             position: relative;
             padding-top: 80px;
         }
@@ -97,7 +97,7 @@
         .agency-description {
             padding: 4rem 2rem;
             background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-            text-align: center;
+            text-align: left;
             opacity: 0;
             animation: fadeIn 1s ease-out forwards;
         }
@@ -262,7 +262,7 @@
             background: #000;
             color: #fff;
             padding: 3rem 2rem 2rem;
-            text-align: center;
+            text-align: left;
         }
         
         .footer-content {
