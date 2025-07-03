@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis View - Agencia de Diseño Multimedial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Axis View Logo">
+                Axis View
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#agencia">Agencia</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="inicio">
+
+        <div class="hero-content"></div>
+        
+        <!-- Canvas P5.js -->
+        <div id="canvas-container"></div>
+
+    </section>
+    
+    <section class="agency-description scroll-animate" id="agencia">
+        <div class="container">
+            <h2>Sobre Axis View</h2>
+            <p>En Axis View, no solo creamos contenido; transformamos tu visión en una experiencia multimedial impactante.</p>
+            <p>Somos una agencia apasionada por el diseño, la innovación y la estrategia, dedicada a potenciar tu marca y conectar con tu audiencia de formas nuevas y emocionantes.</p>
+            <p>Desde videos cautivadores y animaciones dinámicas hasta estrategias digitales completas y diseño web intuitivo, cada proyecto es una oportunidad para explorar nuevas perspectivas y alcanzar tus objetivos. Descubre cómo Axis View puede llevar tu comunicación al siguiente nivel.</p>
+        </div>
+    </section>
+    
+    <section class="services scroll-animate" id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-pill" data-service="marcas">
+                    <img src="img/marks.svg" alt="Marcas" style="background: rgba(255,255,255,0.2);">
+                    <h3>MARCAS</h3>
+                    <p>Desarrollo de identidad visual y estrategias de marca que conectan con tu audiencia.</p>
+                </div>
+                
+                <div class="service-pill" data-service="soluciones">
+                    <img src="img/solutions.svg" alt="Soluciones" style="background: rgba(255,255,255,0.2);">
+                    <h3>SOLUCIONES</h3>
+                    <p>Implementamos tecnologías innovadoras para resolver desafíos complejos.</p>
+                </div>
+                
+                <div class="service-pill" data-service="medios">
+                    <img src="img/media.svg" alt="Medios Digitales" style="background: rgba(255,255,255,0.2);">
+                    <h3>MEDIOS DIGITALES</h3>
+                    <p>Creación de contenido multimedia para todas las plataformas digitales.</p>
+                </div>
+                
+                <div class="service-pill" data-service="ia">
+                    <img src="img/ai.svg" alt="Inteligencia Artificial" style="background: rgba(255,255,255,0.2);">
+                    <h3>INTELIGENCIA ARTIFICIAL</h3>
+                    <p>Integración de IA para automatización y análisis predictivo avanzado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team scroll-animate" id="equipo">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/migue.jpeg" alt="Miguel Agustín Tello" style="background: #ddd;">
+                    <h3>Miguel Agustín Tello</h3>
+                    <div class="role">Director Creativo</div>
+                    <p>Especializado en diseño visual y experiencia de usuario, con más de 5 años en la industria creativa.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="img/ulises.jpg" alt="Ulises Romero" style="background: #ddd;">
+                    <h3>Ulises Romero</h3>
+                    <div class="role">Desarrollador Frontend</div>
+                    <p>Experto en tecnologías web modernas y desarrollo de interfaces interactivas.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="img/gonza.jpeg" alt="Gonzalo Verdún" style="background: #ddd;">
+                    <h3>Gonzalo Verdún</h3>
+                    <div class="role">Especialista en Tecnología</div>
+                    <p>Enfocado en implementación de soluciones tecnológicas y optimización de procesos digitales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div>
+                    <strong>Carrera:</strong>
+                    Diseño Multimedial
+                </div>
+                
+                <div>
+                    <strong>Materia:</strong>
+                    Diseño y Programación Web I
+                </div>
+                
+                <div>
+                    <strong>Curso:</strong>
+                    DMN3AV
+                </div>
+                
+                <div>
+                    <strong>Turno:</strong>
+                    Noche
+                </div>
+                
+                <div>
+                    <strong>Modalidad:</strong>
+                    Virtual
+                </div>
+                
+                <div>
+                    <strong>Profesor:</strong>
+                    Sergio Daniel Medina
+                </div>
+                
+                <div>
+                    <strong>Alumnos:</strong>
+                    Miguel Agustín Tello, Ulises Romero, Gonzalo Verdún
+                </div>
+                
+                <div>
+                    <strong>Evaluación:</strong>
+                    Segundo Parcial
+                </div>
+                
+                <div>
+                    <strong>Mes y Año:</strong>
+                    Julio 2025
+                </div>
+            </div>
+            
+            <p>&copy; 2025 Axis View - Trabajo Práctico Universitario</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script> 
+
+</body>
+</html>
