@@ -1,4 +1,4 @@
-        // Variables para el canvas P5.js
+
         let angleY = 0;
         let angleX = 0;
         let angleZ = 0;
@@ -15,12 +15,12 @@
         function draw() {
             background(26, 26, 26);
 
-            // Luces básicas
+
             ambientLight(60, 60, 60);
             directionalLight(255, 255, 255, -1, -1, -1.5);
             pointLight(255, 255, 255, 300, 0, 300);
 
-            // Rotación con mouse
+
             let dx = mouseX - pmouseX;
             let dy = mouseY - pmouseY;
             let sensitivity = 0.005;
@@ -29,11 +29,10 @@
             angleX += dy * sensitivity;
             angleZ += (dx + dy) * sensitivity;
 
-            // Órbita
+
             let orbitRadius = baseRadius + 100 * sin(frameCount * 0.02);
             orbitAngle += rotationSpeed;
 
-            // Posiciones
             let boxX = cos(orbitAngle) * orbitRadius;
             let boxY = sin(orbitAngle) * orbitRadius;
             let boxZ = cos(orbitAngle) * orbitRadius;
@@ -46,7 +45,7 @@
             let coneY = sin(orbitAngle + TWO_PI * 2 / 3) * orbitRadius;
             let coneZ = cos(orbitAngle + TWO_PI * 2 / 3) * orbitRadius;
 
-            // Dibujar figuras
+
             push();
             translate(boxX, boxY, boxZ);
             rotateY(angleY);
@@ -85,7 +84,7 @@
             }
         }
 
-        // Animaciones de scroll
+
         function animateOnScroll() {
             const elements = document.querySelectorAll('.scroll-animate');
             
@@ -99,13 +98,13 @@
             });
         }
 
-        // Inicializar cuando carga la página
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Animaciones en scroll
+
             window.addEventListener('scroll', animateOnScroll);
             animateOnScroll();
             
-            // Efecto del header al hacer scroll
+
             window.addEventListener('scroll', function() {
                 const header = document.querySelector('header');
                 if (window.scrollY > 100) {
@@ -117,7 +116,7 @@
                 }
             });
 
-            // Smooth scrolling para navegación
+
             const navLinks = document.querySelectorAll('nav a[href^="#"]');
             
             navLinks.forEach(link => {
